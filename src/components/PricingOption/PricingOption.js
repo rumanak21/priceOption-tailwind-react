@@ -1,5 +1,7 @@
 import React from 'react';
 import PriceBenefits from '../PriceBenefits/PriceBenefits';
+import { ChevronDoubleRightIcon } from '@heroicons/react/solid'
+
 
 const PricingOption = (props) => {
     const { name, price, benefits } = props.option
@@ -22,6 +24,9 @@ const PricingOption = (props) => {
                </div>
 
             </div>
+            <button className=' bg-green-500 flex justify-center items-center w-full rounded py-2 text-white hover:text-orange-700 font- '>
+               <ChevronDoubleRightIcon className='w-4 h-4'></ChevronDoubleRightIcon> Buy Now
+            </button>
         </div>
     );
 };
